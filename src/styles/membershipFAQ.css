@@ -1,0 +1,244 @@
+/*==================================================
+MEMBERSHIP FAQ
+==================================================*/
+
+.membership-faq-section{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.membership-faq-container{
+    width:92%;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+/*==================================================
+HEADING
+==================================================*/
+
+.membership-faq-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.membership-faq-heading span{
+    display:inline-block;
+    padding:8px 20px;
+    background:#eef4ff;
+    color:#0d4dbb;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+.membership-faq-heading h2{
+    font-size:48px;
+    color:#081C3A;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.membership-faq-heading p{
+    max-width:700px;
+    margin:0 auto;
+    color:#666;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/*==================================================
+FAQ LIST
+==================================================*/
+
+.membership-faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/*==================================================
+FAQ ITEM
+==================================================*/
+
+.membership-faq-item{
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    overflow:hidden;
+    transition:.35s;
+    border-left:5px solid transparent;
+}
+
+.membership-faq-item:hover{
+    border-left-color:#D4AF37;
+    transform:translateY(-3px);
+}
+
+.membership-faq-item.active{
+    border-left-color:#D4AF37;
+}
+
+/*==================================================
+QUESTION
+==================================================*/
+
+.membership-faq-question{
+
+    width:100%;
+
+    border:none;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:22px 28px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#081C3A;
+
+    text-align:left;
+
+    transition:.3s;
+
+}
+
+.membership-faq-question:hover{
+
+    background:#fafafa;
+
+}
+
+.membership-faq-question svg{
+
+    color:#D4AF37;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+}
+
+/*==================================================
+ANSWER
+==================================================*/
+
+.membership-faq-answer{
+
+    padding:0 28px 25px;
+
+    animation:faqFade .3s ease;
+
+}
+
+.membership-faq-answer p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    font-size:15px;
+
+}
+
+/*==================================================
+ANIMATION
+==================================================*/
+
+@keyframes faqFade{
+
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+.membership-faq-section{
+
+padding:80px 0;
+
+}
+
+.membership-faq-heading h2{
+
+font-size:38px;
+
+}
+
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.membership-faq-section{
+
+padding:70px 0;
+
+}
+
+.membership-faq-heading{
+
+margin-bottom:40px;
+
+}
+
+.membership-faq-heading h2{
+
+font-size:30px;
+
+}
+
+.membership-faq-heading p{
+
+font-size:15px;
+
+}
+
+.membership-faq-question{
+
+padding:18px;
+
+font-size:16px;
+
+gap:15px;
+
+}
+
+.membership-faq-answer{
+
+padding:0 18px 20px;
+
+}
+
+.membership-faq-answer p{
+
+font-size:14px;
+
+}
+
+}

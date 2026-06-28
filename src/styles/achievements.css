@@ -1,0 +1,170 @@
+/*==========================
+ACHIEVEMENTS
+==========================*/
+
+.achievements{
+    padding:100px 0;
+    background:#fff;
+}
+
+.achievements-container{
+    width:92%;
+    max-width:1350px;
+    margin:auto;
+}
+
+/* Heading */
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    display:inline-block;
+    background:#eef4ff;
+    color:#0d4dbb;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+.section-title h2{
+    font-size:46px;
+    color:#081C3A;
+    margin-bottom:18px;
+}
+
+.section-title p{
+    max-width:760px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* Grid */
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+/* Card */
+
+.achievement-card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.35s;
+    border-top:5px solid #D4AF37;
+}
+
+.achievement-card:hover{
+    transform:translateY(-10px);
+    background:#081C3A;
+}
+
+.achievement-card:hover h3,
+.achievement-card:hover p{
+    color:#fff;
+}
+
+.achievement-card:hover .achievement-icon{
+    background:#D4AF37;
+    color:#081C3A;
+}
+
+/* Icon */
+
+.achievement-icon{
+    width:85px;
+    height:85px;
+    margin:auto;
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#081C3A;
+    color:#D4AF37;
+
+    font-size:34px;
+
+    transition:.35s;
+}
+
+/* Text */
+
+.achievement-card h3{
+    color:#081C3A;
+    font-size:42px;
+    margin-bottom:10px;
+    transition:.3s;
+}
+
+.achievement-card p{
+    color:#666;
+    font-size:17px;
+    transition:.3s;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.achievements{
+    padding:80px 0;
+}
+
+.achievement-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.section-title h2{
+    font-size:38px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.achievements{
+    padding:70px 0;
+}
+
+.section-title{
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+.section-title p{
+    font-size:15px;
+}
+
+.achievement-grid{
+    grid-template-columns:1fr;
+}
+
+.achievement-card{
+    padding:35px 20px;
+}
+
+.achievement-card h3{
+    font-size:34px;
+}
+
+}

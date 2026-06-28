@@ -1,0 +1,193 @@
+/*==================================================
+MEMBERSHIP COMPARE
+==================================================*/
+
+.membership-compare{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.membership-compare-container{
+    width:92%;
+    max-width:1400px;
+    margin:0 auto;
+}
+
+/*==================================================
+HEADING
+==================================================*/
+
+.membership-compare-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.membership-compare-heading span{
+    display:inline-block;
+    padding:8px 20px;
+    background:#eef4ff;
+    color:#0d4dbb;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+.membership-compare-heading h2{
+    font-size:48px;
+    color:#081C3A;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.membership-compare-heading p{
+    max-width:760px;
+    margin:0 auto;
+    color:#666;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/*==================================================
+TABLE
+==================================================*/
+
+.membership-table-wrapper{
+    overflow-x:auto;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.membership-table{
+    width:100%;
+    min-width:900px;
+    border-collapse:collapse;
+}
+
+.membership-table thead{
+    background:#081C3A;
+}
+
+.membership-table thead th{
+    color:#fff;
+    padding:22px;
+    font-size:17px;
+    font-weight:700;
+    text-align:center;
+}
+
+.membership-table thead th:first-child{
+    text-align:left;
+    padding-left:35px;
+}
+
+.membership-table tbody tr{
+    transition:.3s;
+}
+
+.membership-table tbody tr:nth-child(even){
+    background:#f8fafc;
+}
+
+.membership-table tbody tr:hover{
+    background:#eef4ff;
+}
+
+.membership-table tbody td{
+    padding:20px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+    font-size:16px;
+}
+
+.membership-table tbody td:first-child{
+    text-align:left;
+    padding-left:35px;
+    font-weight:600;
+    color:#081C3A;
+}
+
+.membership-table tbody svg{
+    font-size:18px;
+}
+
+/* Check Icon */
+
+.membership-table tbody td svg[data-icon="check"]{
+    color:#2ecc71;
+}
+
+/* Close Icon */
+
+.membership-table tbody td svg[data-icon="xmark"]{
+    color:#e74c3c;
+}
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+.membership-compare{
+
+padding:80px 0;
+
+}
+
+.membership-compare-heading h2{
+
+font-size:38px;
+
+}
+
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.membership-compare{
+
+padding:70px 0;
+
+}
+
+.membership-compare-heading{
+
+margin-bottom:40px;
+
+}
+
+.membership-compare-heading h2{
+
+font-size:30px;
+
+}
+
+.membership-compare-heading p{
+
+font-size:15px;
+
+}
+
+.membership-table{
+
+min-width:850px;
+
+}
+
+.membership-table thead th,
+.membership-table tbody td{
+
+padding:16px;
+
+font-size:14px;
+
+}
+
+}

@@ -1,0 +1,208 @@
+/*==================================================
+MEMBERSHIP BENEFITS
+==================================================*/
+
+.membership-benefits{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.membership-benefits-container{
+    width:92%;
+    max-width:1400px;
+    margin:0 auto;
+}
+
+/*==================================================
+HEADING
+==================================================*/
+
+.membership-benefits-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.membership-benefits-heading span{
+    display:inline-block;
+    padding:8px 20px;
+    background:#eef4ff;
+    color:#0d4dbb;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+.membership-benefits-heading h2{
+    font-size:48px;
+    color:#081C3A;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.membership-benefits-heading p{
+    max-width:760px;
+    margin:0 auto;
+    color:#666;
+    font-size:16px;
+    line-height:1.8;
+}
+
+/*==================================================
+GRID
+==================================================*/
+
+.membership-benefits-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+/*==================================================
+CARD
+==================================================*/
+
+.membership-benefit-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border:1px solid #ececec;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.membership-benefit-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    border-color:#D4AF37;
+
+}
+
+/*==================================================
+ICON
+==================================================*/
+
+.membership-benefit-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#081C3A;
+
+    color:#D4AF37;
+
+    font-size:30px;
+
+    transition:.35s;
+
+}
+
+.membership-benefit-card:hover .membership-benefit-icon{
+
+    background:#D4AF37;
+
+    color:#081C3A;
+
+}
+
+/*==================================================
+TEXT
+==================================================*/
+
+.membership-benefit-card h3{
+
+    font-size:22px;
+
+    color:#081C3A;
+
+    margin-bottom:15px;
+
+}
+
+.membership-benefit-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:1200px){
+
+    .membership-benefits-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+    .membership-benefits{
+
+        padding:70px 0;
+
+    }
+
+    .membership-benefits-heading h2{
+
+        font-size:32px;
+
+    }
+
+    .membership-benefits-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+    .membership-benefit-card{
+
+        padding:30px 22px;
+
+    }
+
+    .membership-benefit-icon{
+
+        width:70px;
+        height:70px;
+        font-size:28px;
+
+    }
+
+}

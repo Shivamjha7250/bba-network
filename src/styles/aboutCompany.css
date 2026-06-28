@@ -1,0 +1,255 @@
+/*==========================
+ABOUT COMPANY
+==========================*/
+
+.about-company{
+    padding:100px 0;
+    background:#fff;
+}
+
+.about-company-container{
+    width:92%;
+    max-width:1350px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+/*==========================
+LEFT IMAGE
+==========================*/
+
+.about-company-image{
+    position:relative;
+}
+
+.about-company-image img{
+    width:100%;
+    border-radius:22px;
+    display:block;
+    object-fit:cover;
+}
+
+.experience-box{
+    position:absolute;
+    right:-25px;
+    bottom:-15px;
+
+    width:210px;
+
+    background:#081C3A;
+    color:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+.experience-box h2{
+    color:#D4AF37;
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.experience-box p{
+    color:#fff;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/*==========================
+RIGHT CONTENT
+==========================*/
+
+.about-company-content .section-tag{
+    display:inline-block;
+
+    background:#eef4ff;
+
+    color:#0d4dbb;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+}
+
+.about-company-content h2{
+    font-size:48px;
+    color:#081C3A;
+    line-height:1.25;
+    margin-bottom:22px;
+}
+
+.about-company-content h2 span{
+    color:#D4AF37;
+}
+
+.about-company-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+/*==========================
+LIST
+==========================*/
+
+.about-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:30px;
+}
+
+.about-list div{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-weight:600;
+    color:#081C3A;
+}
+
+.about-list svg{
+    color:#D4AF37;
+    font-size:18px;
+}
+
+/*==========================
+BUTTONS
+==========================*/
+
+.about-buttons{
+    display:flex;
+    gap:18px;
+    margin-top:40px;
+}
+
+.primary-btn,
+.secondary-btn{
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.primary-btn{
+
+    background:#D4AF37;
+
+    color:#081C3A;
+}
+
+.primary-btn:hover{
+
+    background:#081C3A;
+
+    color:#fff;
+}
+
+.secondary-btn{
+
+    background:#081C3A;
+
+    color:#fff;
+}
+
+.secondary-btn:hover{
+
+    background:#D4AF37;
+
+    color:#081C3A;
+}
+
+/*==========================
+TABLET
+==========================*/
+
+@media(max-width:992px){
+
+.about-company{
+    padding:80px 0;
+}
+
+.about-company-container{
+    grid-template-columns:1fr;
+}
+
+.experience-box{
+    right:20px;
+    bottom:20px;
+}
+
+.about-company-content h2{
+    font-size:38px;
+}
+
+.about-list{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+/*==========================
+MOBILE
+==========================*/
+
+@media(max-width:768px){
+
+.about-company{
+    padding:70px 0;
+}
+
+.about-company-content h2{
+    font-size:30px;
+}
+
+.about-company-content p{
+    font-size:15px;
+}
+
+.about-list{
+    grid-template-columns:1fr;
+}
+
+.about-buttons{
+    flex-direction:column;
+}
+
+.primary-btn,
+.secondary-btn{
+    width:100%;
+}
+
+.experience-box{
+    position:static;
+    width:100%;
+    margin-top:20px;
+}
+
+}

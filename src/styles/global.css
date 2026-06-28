@@ -1,0 +1,132 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#ffffff;
+color:#222;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.navbar{
+background:#081b33;
+padding:18px 0;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h2{
+color:#d4af37;
+}
+
+.logo span{
+color:#fff;
+font-size:14px;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.join-btn{
+background:#d4af37;
+padding:12px 22px;
+border:none;
+cursor:pointer;
+border-radius:6px;
+font-weight:bold;
+}
+
+.hero{
+padding:80px 0;
+}
+
+.hero-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+}
+
+.hero-left h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero-left p{
+font-size:18px;
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+}
+
+.primary-btn{
+background:#d4af37;
+padding:14px 30px;
+border:none;
+cursor:pointer;
+}
+
+.secondary-btn{
+background:#081b33;
+color:white;
+padding:14px 30px;
+border:none;
+cursor:pointer;
+}
+
+.hero-right img{
+width:100%;
+max-width:520px;
+border-radius:15px;
+}
+
+.about{
+padding:80px 0;
+background:#f7f7f7;
+text-align:center;
+}
+
+.about h2{
+margin-bottom:20px;
+font-size:40px;
+}
+
+.about p{
+font-size:18px;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+.footer{
+background:#081b33;
+color:white;
+padding:40px 0;
+text-align:center;
+}

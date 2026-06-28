@@ -1,0 +1,260 @@
+/*==================================================
+OFFICE HOURS
+==================================================*/
+
+.office-hours{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.office-hours-container{
+    width:92%;
+    max-width:1400px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+/*==================================================
+LEFT CONTENT
+==================================================*/
+
+.office-hours-content span{
+    display:inline-block;
+    padding:8px 20px;
+    background:#eef4ff;
+    color:#0d4dbb;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+.office-hours-content h2{
+    font-size:48px;
+    color:#081C3A;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.office-hours-content p{
+    color:#666;
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+/*==================================================
+CONTACT INFO
+==================================================*/
+
+.office-contact-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.office-contact-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    background:#fff;
+    padding:20px 24px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.35s;
+}
+
+.office-contact-item:hover{
+    transform:translateY(-5px);
+    border-left:4px solid #D4AF37;
+}
+
+.office-contact-item svg{
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:#081C3A;
+    color:#D4AF37;
+
+    padding:18px;
+    font-size:24px;
+
+    flex-shrink:0;
+}
+
+.office-contact-item h4{
+    font-size:18px;
+    color:#081C3A;
+    margin-bottom:6px;
+}
+
+.office-contact-item p{
+    margin:0;
+    color:#666;
+    font-size:15px;
+}
+
+/*==================================================
+RIGHT CARD
+==================================================*/
+
+.office-hours-card{
+    background:#fff;
+    border-radius:22px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.office-hours-title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.office-hours-title svg{
+    width:65px;
+    height:65px;
+
+    background:#081C3A;
+    color:#D4AF37;
+
+    border-radius:50%;
+
+    padding:18px;
+    font-size:26px;
+}
+
+.office-hours-title h3{
+    font-size:28px;
+    color:#081C3A;
+}
+
+/*==================================================
+HOURS LIST
+==================================================*/
+
+.office-hours-list{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.office-hour-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 20px;
+
+    border-radius:12px;
+
+    background:#f8fafc;
+
+    transition:.3s;
+}
+
+.office-hour-row:hover{
+    background:#eef4ff;
+}
+
+.office-day{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.office-day svg{
+    color:#D4AF37;
+    font-size:18px;
+}
+
+.office-day span{
+    font-weight:600;
+    color:#081C3A;
+}
+
+.office-hour-row strong{
+    color:#081C3A;
+    font-size:15px;
+}
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+.office-hours{
+    padding:80px 0;
+}
+
+.office-hours-container{
+    grid-template-columns:1fr;
+    gap:50px;
+}
+
+.office-hours-content{
+    text-align:center;
+}
+
+.office-hours-content h2{
+    font-size:38px;
+}
+
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.office-hours{
+    padding:70px 0;
+}
+
+.office-hours-content h2{
+    font-size:30px;
+}
+
+.office-hours-content p{
+    font-size:15px;
+}
+
+.office-hours-card{
+    padding:25px;
+}
+
+.office-hours-title{
+    flex-direction:column;
+    text-align:center;
+}
+
+.office-hour-row{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+}
+
+.office-day{
+    justify-content:center;
+}
+
+.office-contact-item{
+    flex-direction:column;
+    text-align:center;
+}
+
+}

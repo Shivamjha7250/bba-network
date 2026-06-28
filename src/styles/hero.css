@@ -1,0 +1,179 @@
+/* =========================
+   HERO SLIDER
+========================= */
+
+.hero{
+    width:100%;
+    margin:0;
+    padding:0;
+    background:#fff;
+}
+
+/* Header ke just niche */
+.slider{
+    width:100%;
+    aspect-ratio:1717 / 916;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:99%;
+
+    object-fit:cover;
+    object-position:center;
+
+    opacity:0;
+
+    transition:opacity .8s ease-in-out;
+}
+
+.slide.active{
+    opacity:1;
+    z-index:1;
+}
+
+/* Banner ke niche */
+
+.dots{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:3px;
+
+    padding:-13px 0 22px;
+
+    background:#fff;
+
+}
+
+.dot{
+
+    width:14px;
+
+    height:14px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#c9c9c9;
+
+    transition:.35s;
+
+}
+
+.dot:hover{
+
+    background:#D4AF37;
+
+}
+
+.dot.active{
+
+    width:40px;
+
+    height:14px;
+
+    border-radius:30px;
+
+    background:#D4AF37;
+
+}
+
+/* Desktop Large */
+
+@media (min-width:1600px){
+
+.slider{
+
+max-height:820px;
+
+}
+
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.slider{
+
+aspect-ratio:1717 / 916;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.slider{
+
+aspect-ratio:16/9;
+
+}
+
+.dots{
+
+padding:15px 0;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.slider{
+
+aspect-ratio:16/9;
+
+}
+
+.dot{
+
+width:11px;
+
+height:11px;
+
+}
+
+.dot.active{
+
+width:28px;
+
+height:11px;
+
+}
+
+.dots{
+
+gap:10px;
+
+padding:12px 0 16px;
+
+}
+
+}
+
+.hero{
+    width:100%;
+    margin:0 !important;
+    padding:0 !important;
+    background:#fff;
+}
