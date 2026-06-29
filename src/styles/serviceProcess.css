@@ -1,15 +1,15 @@
 /*==================================================
-ACHIEVEMENTS
+SERVICE PROCESS
 ==================================================*/
 
-.achievements{
+.service-process{
     padding:100px 0;
     background:#f8fafc;
 }
 
-.achievements-container{
+.services-container{
     width:92%;
-    max-width:1300px;
+    max-width:1400px;
     margin:auto;
 }
 
@@ -42,7 +42,7 @@ SECTION TITLE
 }
 
 .section-title p{
-    max-width:700px;
+    max-width:760px;
     margin:auto;
     color:#666;
     font-size:16px;
@@ -53,27 +53,28 @@ SECTION TITLE
 GRID
 ==================================================*/
 
-.achievement-grid{
+.process-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
-    max-width:900px;
-    margin:0 auto;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    position:relative;
 }
 
 /*==================================================
 CARD
 ==================================================*/
 
-.achievement-card{
+.process-card{
+
+    position:relative;
 
     background:#fff;
 
-    border-radius:20px;
-
-    padding:45px 30px;
+    padding:40px 28px;
 
     text-align:center;
+
+    border-radius:20px;
 
     border:1px solid #ececec;
 
@@ -83,7 +84,7 @@ CARD
 
 }
 
-.achievement-card:hover{
+.process-card:hover{
 
     transform:translateY(-10px);
 
@@ -94,34 +95,66 @@ CARD
 }
 
 /*==================================================
+STEP NUMBER
+==================================================*/
+
+.process-number{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#D4AF37;
+
+    color:#081C3A;
+
+    font-weight:700;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 auto 20px;
+
+    font-size:18px;
+
+}
+
+/*==================================================
 ICON
 ==================================================*/
 
-.achievement-icon{
+.process-icon{
 
-    width:90px;
+    width:80px;
 
-    height:90px;
+    height:80px;
 
     margin:0 auto 25px;
 
     border-radius:50%;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
     background:#081C3A;
 
     color:#D4AF37;
 
-    font-size:34px;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
 
     transition:.35s;
 
 }
 
-.achievement-card:hover .achievement-icon{
+.process-card:hover .process-icon{
 
     background:#D4AF37;
 
@@ -133,27 +166,23 @@ ICON
 TEXT
 ==================================================*/
 
-.achievement-card h3{
+.process-card h3{
 
-    font-size:46px;
+    font-size:22px;
 
     color:#081C3A;
 
-    margin-bottom:12px;
-
-    font-weight:700;
+    margin-bottom:15px;
 
 }
 
-.achievement-card p{
-
-    font-size:18px;
+.process-card p{
 
     color:#666;
 
-    line-height:1.7;
+    font-size:15px;
 
-    text-transform:capitalize;
+    line-height:1.8;
 
 }
 
@@ -161,9 +190,19 @@ TEXT
 TABLET
 ==================================================*/
 
+@media(max-width:1200px){
+
+.process-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
 @media(max-width:992px){
 
-.achievements{
+.service-process{
 
 padding:80px 0;
 
@@ -175,14 +214,6 @@ font-size:38px;
 
 }
 
-.achievement-grid{
-
-grid-template-columns:1fr;
-
-max-width:550px;
-
-}
-
 }
 
 /*==================================================
@@ -191,7 +222,7 @@ MOBILE
 
 @media(max-width:768px){
 
-.achievements{
+.service-process{
 
 padding:70px 0;
 
@@ -215,30 +246,26 @@ font-size:15px;
 
 }
 
-.achievement-card{
+.process-grid{
 
-padding:35px 20px;
+grid-template-columns:1fr;
 
-}
-
-.achievement-icon{
-
-width:75px;
-height:75px;
-
-font-size:28px;
+gap:25px;
 
 }
 
-.achievement-card h3{
+.process-card{
 
-font-size:36px;
+padding:30px 22px;
 
 }
 
-.achievement-card p{
+.process-icon{
 
-font-size:16px;
+width:70px;
+height:70px;
+
+font-size:26px;
 
 }
 

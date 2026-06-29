@@ -1,28 +1,28 @@
 /*==================================================
-ACHIEVEMENTS
+TESTIMONIALS GRID
 ==================================================*/
 
-.achievements{
+.testimonials-grid-section{
     padding:100px 0;
     background:#f8fafc;
 }
 
-.achievements-container{
+.testimonials-grid-container{
     width:92%;
-    max-width:1300px;
+    max-width:1400px;
     margin:auto;
 }
 
 /*==================================================
-SECTION TITLE
+HEADING
 ==================================================*/
 
-.section-title{
+.testimonials-grid-heading{
     text-align:center;
     margin-bottom:60px;
 }
 
-.section-title span{
+.testimonials-grid-heading span{
     display:inline-block;
     padding:8px 20px;
     background:#eef4ff;
@@ -34,15 +34,15 @@ SECTION TITLE
     margin-bottom:18px;
 }
 
-.section-title h2{
+.testimonials-grid-heading h2{
     font-size:48px;
     color:#081C3A;
     margin-bottom:18px;
     line-height:1.2;
 }
 
-.section-title p{
-    max-width:700px;
+.testimonials-grid-heading p{
+    max-width:750px;
     margin:auto;
     color:#666;
     font-size:16px;
@@ -53,25 +53,23 @@ SECTION TITLE
 GRID
 ==================================================*/
 
-.achievement-grid{
+.testimonials-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
-    max-width:900px;
-    margin:0 auto;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
 }
 
 /*==================================================
 CARD
 ==================================================*/
 
-.achievement-card{
+.testimonial-card{
 
-    background:#fff;
+    background:#081b33;
 
     border-radius:20px;
 
-    padding:45px 30px;
+    padding:30px 25px;
 
     text-align:center;
 
@@ -83,7 +81,7 @@ CARD
 
 }
 
-.achievement-card:hover{
+.testimonial-card:hover{
 
     transform:translateY(-10px);
 
@@ -94,38 +92,42 @@ CARD
 }
 
 /*==================================================
-ICON
+IMAGE
 ==================================================*/
 
-.achievement-icon{
+.testimonial-image{
 
     width:90px;
 
     height:90px;
 
-    margin:0 auto 25px;
+    object-fit:cover;
 
     border-radius:50%;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    border:4px solid #D4AF37;
 
-    background:#081C3A;
-
-    color:#D4AF37;
-
-    font-size:34px;
-
-    transition:.35s;
+    margin-bottom:20px;
 
 }
 
-.achievement-card:hover .achievement-icon{
+/*==================================================
+STARS
+==================================================*/
 
-    background:#D4AF37;
+.testimonial-stars{
 
-    color:#081C3A;
+    display:flex;
+
+    justify-content:center;
+
+    gap:5px;
+
+    color:#D4AF37;
+
+    font-size:16px;
+
+    margin-bottom:18px;
 
 }
 
@@ -133,27 +135,35 @@ ICON
 TEXT
 ==================================================*/
 
-.achievement-card h3{
+.testimonial-review{
 
-    font-size:46px;
+    color:#e8e8e8;;
 
-    color:#081C3A;
+    line-height:1.8;
 
-    margin-bottom:12px;
+    font-size:15px;
 
-    font-weight:700;
+    margin-bottom:22px;
+
+    min-height:120px;
 
 }
 
-.achievement-card p{
+.testimonial-card h3{
 
-    font-size:18px;
+    font-size:22px;
 
-    color:#666;
+    color:#081C3A;
 
-    line-height:1.7;
+    margin-bottom:8px;
 
-    text-transform:capitalize;
+}
+
+.testimonial-card span{
+
+    color:#f8fafc;
+
+    font-size:15px;
 
 }
 
@@ -161,25 +171,27 @@ TEXT
 TABLET
 ==================================================*/
 
+@media(max-width:1200px){
+
+.testimonials-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
 @media(max-width:992px){
 
-.achievements{
+.testimonials-grid-section{
 
 padding:80px 0;
 
 }
 
-.section-title h2{
+.testimonials-grid-heading h2{
 
 font-size:38px;
-
-}
-
-.achievement-grid{
-
-grid-template-columns:1fr;
-
-max-width:550px;
 
 }
 
@@ -191,54 +203,54 @@ MOBILE
 
 @media(max-width:768px){
 
-.achievements{
+.testimonials-grid-section{
 
 padding:70px 0;
 
 }
 
-.section-title{
+.testimonials-grid-heading{
 
 margin-bottom:40px;
 
 }
 
-.section-title h2{
+.testimonials-grid-heading h2{
 
 font-size:30px;
 
 }
 
-.section-title p{
+.testimonials-grid-heading p{
 
 font-size:15px;
 
 }
 
-.achievement-card{
+.testimonials-grid{
 
-padding:35px 20px;
+grid-template-columns:1fr;
 
-}
-
-.achievement-icon{
-
-width:75px;
-height:75px;
-
-font-size:28px;
+gap:25px;
 
 }
 
-.achievement-card h3{
+.testimonial-card{
 
-font-size:36px;
+padding:28px 20px;
 
 }
 
-.achievement-card p{
+.testimonial-image{
 
-font-size:16px;
+width:80px;
+height:80px;
+
+}
+
+.testimonial-review{
+
+min-height:auto;
 
 }
 

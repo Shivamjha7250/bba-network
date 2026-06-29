@@ -1,15 +1,15 @@
 /*==================================================
-ACHIEVEMENTS
+WHY CHOOSE SERVICES
 ==================================================*/
 
-.achievements{
+.why-services{
     padding:100px 0;
     background:#f8fafc;
 }
 
-.achievements-container{
+.services-container{
     width:92%;
-    max-width:1300px;
+    max-width:1400px;
     margin:auto;
 }
 
@@ -17,12 +17,12 @@ ACHIEVEMENTS
 SECTION TITLE
 ==================================================*/
 
-.section-title{
+.why-services .section-title{
     text-align:center;
     margin-bottom:60px;
 }
 
-.section-title span{
+.why-services .section-title span{
     display:inline-block;
     padding:8px 20px;
     background:#eef4ff;
@@ -34,44 +34,42 @@ SECTION TITLE
     margin-bottom:18px;
 }
 
-.section-title h2{
+.why-services .section-title h2{
     font-size:48px;
     color:#081C3A;
     margin-bottom:18px;
     line-height:1.2;
 }
 
-.section-title p{
-    max-width:700px;
+.why-services .section-title p{
+    max-width:760px;
     margin:auto;
     color:#666;
-    font-size:16px;
     line-height:1.8;
+    font-size:16px;
 }
 
 /*==================================================
 GRID
 ==================================================*/
 
-.achievement-grid{
+.why-services-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
-    max-width:900px;
-    margin:0 auto;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
 }
 
 /*==================================================
 CARD
 ==================================================*/
 
-.achievement-card{
+.why-service-card{
 
     background:#fff;
 
     border-radius:20px;
 
-    padding:45px 30px;
+    padding:35px 30px;
 
     text-align:center;
 
@@ -83,7 +81,7 @@ CARD
 
 }
 
-.achievement-card:hover{
+.why-service-card:hover{
 
     transform:translateY(-10px);
 
@@ -97,31 +95,31 @@ CARD
 ICON
 ==================================================*/
 
-.achievement-icon{
+.why-service-icon{
 
-    width:90px;
+    width:80px;
 
-    height:90px;
+    height:80px;
 
     margin:0 auto 25px;
 
     border-radius:50%;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
     background:#081C3A;
 
     color:#D4AF37;
 
-    font-size:34px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
 
     transition:.35s;
 
 }
 
-.achievement-card:hover .achievement-icon{
+.why-service-card:hover .why-service-icon{
 
     background:#D4AF37;
 
@@ -133,27 +131,23 @@ ICON
 TEXT
 ==================================================*/
 
-.achievement-card h3{
+.why-service-card h3{
 
-    font-size:46px;
+    font-size:22px;
 
     color:#081C3A;
 
-    margin-bottom:12px;
-
-    font-weight:700;
+    margin-bottom:15px;
 
 }
 
-.achievement-card p{
-
-    font-size:18px;
+.why-service-card p{
 
     color:#666;
 
-    line-height:1.7;
+    font-size:15px;
 
-    text-transform:capitalize;
+    line-height:1.8;
 
 }
 
@@ -161,25 +155,27 @@ TEXT
 TABLET
 ==================================================*/
 
+@media(max-width:1200px){
+
+.why-services-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
 @media(max-width:992px){
 
-.achievements{
+.why-services{
 
 padding:80px 0;
 
 }
 
-.section-title h2{
+.why-services .section-title h2{
 
 font-size:38px;
-
-}
-
-.achievement-grid{
-
-grid-template-columns:1fr;
-
-max-width:550px;
 
 }
 
@@ -191,54 +187,50 @@ MOBILE
 
 @media(max-width:768px){
 
-.achievements{
+.why-services{
 
 padding:70px 0;
 
 }
 
-.section-title{
+.why-services .section-title{
 
 margin-bottom:40px;
 
 }
 
-.section-title h2{
+.why-services .section-title h2{
 
 font-size:30px;
 
 }
 
-.section-title p{
+.why-services .section-title p{
 
 font-size:15px;
 
 }
 
-.achievement-card{
+.why-services-grid{
 
-padding:35px 20px;
+grid-template-columns:1fr;
 
-}
-
-.achievement-icon{
-
-width:75px;
-height:75px;
-
-font-size:28px;
+gap:25px;
 
 }
 
-.achievement-card h3{
+.why-service-card{
 
-font-size:36px;
+padding:30px 22px;
 
 }
 
-.achievement-card p{
+.why-service-icon{
 
-font-size:16px;
+width:70px;
+height:70px;
+
+font-size:26px;
 
 }
 

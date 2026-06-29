@@ -1,15 +1,15 @@
 /*==================================================
-ACHIEVEMENTS
+SERVICES GRID
 ==================================================*/
 
-.achievements{
+.services-grid-section{
     padding:100px 0;
-    background:#f8fafc;
+    background:#ffffff;
 }
 
-.achievements-container{
+.services-container{
     width:92%;
-    max-width:1300px;
+    max-width:1400px;
     margin:auto;
 }
 
@@ -38,14 +38,12 @@ SECTION TITLE
     font-size:48px;
     color:#081C3A;
     margin-bottom:18px;
-    line-height:1.2;
 }
 
 .section-title p{
-    max-width:700px;
+    max-width:760px;
     margin:auto;
     color:#666;
-    font-size:16px;
     line-height:1.8;
 }
 
@@ -53,25 +51,23 @@ SECTION TITLE
 GRID
 ==================================================*/
 
-.achievement-grid{
+.services-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
-    max-width:900px;
-    margin:0 auto;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
 }
 
 /*==================================================
 CARD
 ==================================================*/
 
-.achievement-card{
+.service-card{
 
     background:#fff;
 
     border-radius:20px;
 
-    padding:45px 30px;
+    padding:35px 30px;
 
     text-align:center;
 
@@ -83,7 +79,7 @@ CARD
 
 }
 
-.achievement-card:hover{
+.service-card:hover{
 
     transform:translateY(-10px);
 
@@ -93,15 +89,10 @@ CARD
 
 }
 
-/*==================================================
-ICON
-==================================================*/
+.service-icon{
 
-.achievement-icon{
-
-    width:90px;
-
-    height:90px;
+    width:80px;
+    height:80px;
 
     margin:0 auto 25px;
 
@@ -115,91 +106,54 @@ ICON
 
     color:#D4AF37;
 
-    font-size:34px;
+    font-size:30px;
 
     transition:.35s;
 
 }
 
-.achievement-card:hover .achievement-icon{
+.service-card:hover .service-icon{
 
     background:#D4AF37;
-
     color:#081C3A;
 
 }
 
-/*==================================================
-TEXT
-==================================================*/
-
-.achievement-card h3{
-
-    font-size:46px;
+.service-card h3{
 
     color:#081C3A;
 
-    margin-bottom:12px;
+    font-size:22px;
 
-    font-weight:700;
+    margin-bottom:15px;
 
 }
 
-.achievement-card p{
-
-    font-size:18px;
+.service-card p{
 
     color:#666;
 
-    line-height:1.7;
+    line-height:1.8;
 
-    text-transform:capitalize;
-
-}
-
-/*==================================================
-TABLET
-==================================================*/
-
-@media(max-width:992px){
-
-.achievements{
-
-padding:80px 0;
+    font-size:15px;
 
 }
 
-.section-title h2{
+@media(max-width:1200px){
 
-font-size:38px;
+.services-grid{
 
-}
-
-.achievement-grid{
-
-grid-template-columns:1fr;
-
-max-width:550px;
+grid-template-columns:repeat(2,1fr);
 
 }
 
 }
-
-/*==================================================
-MOBILE
-==================================================*/
 
 @media(max-width:768px){
 
-.achievements{
+.services-grid-section{
 
 padding:70px 0;
-
-}
-
-.section-title{
-
-margin-bottom:40px;
 
 }
 
@@ -209,36 +163,9 @@ font-size:30px;
 
 }
 
-.section-title p{
+.services-grid{
 
-font-size:15px;
-
-}
-
-.achievement-card{
-
-padding:35px 20px;
-
-}
-
-.achievement-icon{
-
-width:75px;
-height:75px;
-
-font-size:28px;
-
-}
-
-.achievement-card h3{
-
-font-size:36px;
-
-}
-
-.achievement-card p{
-
-font-size:16px;
+grid-template-columns:1fr;
 
 }
 

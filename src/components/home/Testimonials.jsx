@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../../styles/testimonials.css";
 import {
   FaStar,
@@ -10,42 +11,42 @@ const testimonials = [
   {
     name: "Amit Sharma",
     role: "Business Consultant",
-    image: "/images/testimonials/user1.jpg",
+    image: "/images/testimonials/user.jpg",
     review:
       "Joining Bharat Business Alliance transformed my business. I received quality referrals and genuine business connections.",
   },
   {
     name: "Priya Verma",
     role: "Digital Marketing Expert",
-    image: "/images/testimonials/user2.jpg",
+    image: "/images/testimonials/user.jpg",
     review:
       "Weekly networking meetings helped me build strong relationships and generate new business opportunities.",
   },
   {
     name: "Rahul Gupta",
     role: "Real Estate Consultant",
-    image: "/images/testimonials/user3.jpg",
+    image: "/images/testimonials/user.jpg",
     review:
       "Professional networking, trusted referrals and excellent support. Highly recommended for entrepreneurs.",
   },
   {
     name: "Neha Singh",
     role: "Chartered Accountant",
-    image: "/images/testimonials/user4.jpg",
+    image: "/images/testimonials/user.jpg",
     review:
       "Excellent business community where members genuinely support each other's business growth.",
   },
   {
     name: "Vikas Patel",
     role: "Manufacturer",
-    image: "/images/testimonials/user5.jpg",
+    image: "/images/testimonials/user.jpg",
     review:
       "BBA expanded my business network and increased quality referrals consistently.",
   },
   {
     name: "Rohit Jain",
     role: "Insurance Advisor",
-    image: "/images/testimonials/user6.jpg",
+    image: "/images/testimonials/user.jpg",
     review:
       "One of the best networking communities for professionals and business owners.",
   },
@@ -64,7 +65,6 @@ export default function Testimonials() {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-
     const resize = () => {
       setCards(getCards());
     };
@@ -72,17 +72,12 @@ export default function Testimonials() {
     window.addEventListener("resize", resize);
 
     return () => window.removeEventListener("resize", resize);
-
   }, []);
 
   useEffect(() => {
 
     const timer = setInterval(() => {
-
-      setCurrent((prev) =>
-        (prev + 1) % testimonials.length
-      );
-
+      setCurrent((prev) => (prev + 1) % testimonials.length);
     }, 4000);
 
     return () => clearInterval(timer);
@@ -205,9 +200,12 @@ export default function Testimonials() {
 
         </div>
 
-        <button className="testimonial-btn">
+        <Link
+          to="/testimonials"
+          className="testimonial-btn"
+        >
           Explore All Testimonials
-        </button>
+        </Link>
 
       </div>
 

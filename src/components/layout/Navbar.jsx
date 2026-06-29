@@ -14,13 +14,10 @@ function Navbar() {
 
   return (
     <header className="navbar">
-
       <div className="container">
 
         {/* Logo */}
-
         <Link to="/" className="logo">
-
           <img
             src="/images/logo/logo.png"
             alt="Bharat Business Alliance"
@@ -31,13 +28,10 @@ function Navbar() {
             <h2>Bharat Business Alliance</h2>
             <p>Together We Connect • Together We Grow</p>
           </div>
-
         </Link>
 
-        {/* Menu */}
-
+        {/* Navigation */}
         <nav className={menuOpen ? "nav active" : "nav"}>
-
           <Link to="/" onClick={() => setMenuOpen(false)}>
             Home
           </Link>
@@ -50,22 +44,20 @@ function Navbar() {
             Membership
           </Link>
 
-          <Link to="/events" onClick={() => setMenuOpen(false)}>
-            Events
+          <Link to="/testimonials" onClick={() => setMenuOpen(false)}>
+            Testimonials
           </Link>
 
-          <Link to="/gallery" onClick={() => setMenuOpen(false)}>
-            Gallery
+          <Link to="/services" onClick={() => setMenuOpen(false)}>
+            Services
           </Link>
 
           <Link to="/contact" onClick={() => setMenuOpen(false)}>
             Contact
           </Link>
-
         </nav>
 
-        {/* Right */}
-
+        {/* Right Side */}
         <div className="nav-right">
 
           <a href="tel:+919250245313" className="icon-btn">
@@ -81,7 +73,11 @@ function Navbar() {
             <FaWhatsapp />
           </a>
 
-          <Link to="/membership" className="join-btn">
+          <Link
+            to="/membership"
+            className="join-btn"
+            onClick={() => setMenuOpen(false)}
+          >
             Join Now
           </Link>
 
@@ -93,9 +89,7 @@ function Navbar() {
           </button>
 
         </div>
-
       </div>
-
     </header>
   );
 }

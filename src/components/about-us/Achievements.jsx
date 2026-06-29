@@ -10,24 +10,16 @@ function Achievements() {
   const data = [
     {
       icon: <FaUsers />,
-      number: "500+",
+      number: "24+",
       title: "Active Members",
     },
-    {
-      icon: <FaHandshake />,
-      number: "1000+",
-      title: "Business Referrals",
-    },
+ 
     {
       icon: <FaBriefcase />,
-      number: "100+",
-      title: "Networking Events",
+      number: "2 lakh +",
+      title: " business generated+",
     },
-    {
-      icon: <FaTrophy />,
-      number: "50+",
-      title: "Success Stories",
-    },
+    
   ];
 
   return (

@@ -11,7 +11,7 @@ function Leadership() {
     {
       name: "Ashish Shukla",
       position: "Founder & President",
-      image: "/images/about/founder.jpg",
+      image: "/images/about/founder.png",
       description:
         "Leading Bharat Business Alliance with a vision to connect entrepreneurs, professionals and businesses across India.",
     },
